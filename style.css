@@ -1,0 +1,327 @@
+@import url(./nullStyle.css);
+@font-face {
+  font-family: "TT Commons";
+  src: local("TT Commons  Regular"), local("TT-Commons--Regular"),
+    url("./fonts/TTCommons-Regular.woff2") format("woff2"),
+    url("./fonts/TTCommons-Regular.woff") format("woff"),
+    url("./fonts/TTCommons-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+:root {
+  font-family: "TT Commons";
+  font-weight: 300;
+  font-size: 18px;
+  --gold: #bb8954;
+  --textBlack: #1a171b;
+  --white: #ffffff;
+  --madeiraWood: #095540;
+  --russianOak: #592e2c;
+  --bogOak: #1a171b;
+  --portWood: #003057;
+  --sherryWood: #691c32;
+  --bgBlackColor: #1e1417;
+  --bgWhiteColor: rgba(255, 255, 255, 0.95);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  margin: 44px 0px 0px 0px;
+  gap: 34px;
+}
+nav a {
+  color: var(--gold);
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.firstPage {
+  max-width: 1920px;
+  background-image: url(./img/FP/Corner1.png), url(./img/FP/Corner2.png),
+    url(./img/FP/Corner3.png), url(./img/FP/FPBackground.png);
+  background-repeat: no-repeat;
+  background-position: 40px 1007px, 40px 35px, 1860px 34px, 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fpCenter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 196px 0px 0px 0px;
+}
+.fpLogoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 0px 0px 280px;
+}
+.fpLogoGroup img:nth-child(2) {
+  padding: 33px 0px 0px 0px;
+}
+.fpLogoGroup img:nth-child(3) {
+  padding: 102px 0px 0px 9px;
+}
+.fpNumber {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 15px;
+  line-height: 17px;
+  color: var(--gold);
+  margin: 0px 43px 0px 0px;
+}
+.fpNumber img {
+  width: 8px;
+}
+.fpNumber li {
+  padding: 14px 0px 0px 0px;
+}
+.numberOnFocus {
+  width: 20px;
+  margin: 19px 6px 0px 0px;
+}
+.fpFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 175px 0px 0px 0px;
+}
+.fpFooter img:nth-child(2) {
+  height: 30px;
+  width: 2px;
+  margin: 20px 0px 0px 0px;
+}
+.fpFooter img:nth-child(3) {
+  height: 50px;
+  width: 2px;
+}
+
+.secondPage {
+  max-width: 1920px;
+  background-image: url(./img/SP/Background3.png), url(./img/SP/Background2.png),
+    url(./img/SP/Background1.png);
+}
+.spHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 111px;
+  background: var(--bgWhiteColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+.spMain {
+  display: flex;
+  padding: 0px 0px 60px 0px;
+}
+.spNumber {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 15px;
+  line-height: 17px;
+  color: var(--gold);
+  margin: 362px 43px 0px 0px;
+}
+.spNumber img {
+  width: 8px;
+}
+.spNumber li {
+  padding: 14px 0px 0px 0px;
+}
+.spNumber li:first-child {
+  padding: 14px 0px 2px 0px;
+}
+.spCards {
+  display: flex;
+  margin: 70px 5px 0px 75px;
+}
+.spCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.spCard img:first-child {
+  transition-duration: 1s;
+}
+.spCard img:first-child:hover {
+  position: relative;
+  transform: translate(0px, -30px);
+}
+.spCard img:nth-child(2) {
+  padding: 57px 0px 0px 0px;
+}
+.spCard span {
+  font-size: 14px;
+  line-height: 16px;
+}
+.madeira {
+  color: var(--madeiraWood);
+}
+.russOak {
+  color: var(--russianOak);
+}
+.bogOak {
+  color: var(--bogOak);
+}
+.portWood {
+  color: var(--portWood);
+}
+.sherryWood {
+  color: var(--sherryWood);
+}
+.mwAbout {
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+  padding: 24px 10px 0px 10px;
+  width: 248px;
+  height: 108px;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid rgba(26, 23, 27, 0.09);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(2px);
+}
+
+.threePage {
+  max-width: 1920px;
+  background-image: url(./img/TP/background.png);
+}
+.tpHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 111px;
+  background: var(--bgWhiteColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+}
+.tpMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 287px 0px 395px 0px;
+}
+.tpMainTitle {
+  width: 449px;
+  height: 287px;
+  background: var(--bgWhiteColor);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tpMainText {
+  width: 719px;
+  height: 287px;
+  background: var(--bgBlackColor);
+  backdrop-filter: blur(2px);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 60px 0px 63px;
+}
+
+.fourPage {
+  max-width: 1920px;
+  background-image: url(./img/FourP/Background.png);
+}
+.fpHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 111px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.fourPMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 170px 0px 0px 25px;
+}
+.fourPMain img {
+  padding: 0px 25px 0px 0px;
+}
+.fourpNumber {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 15px;
+  line-height: 17px;
+  color: var(--gold);
+  left: 95.5%;
+  gap: 0px;
+  margin: 0px 43px 249px 0px;
+}
+.fourpNumber li {
+  padding: 14px 0px 0px 0px;
+}
+.fourPScroll {
+  display: flex;
+  padding: 150px 0px 90px 0px;
+  align-items: center;
+  gap: 25px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 71px;
+  height: 71px;
+  background: var(--textBlack);
+  border-radius: 50%;
+  padding: 0px 0px 0px 20px;
+}
+.left:first-child {
+  margin: 23px 0px 0px 0px;
+}
+.left:last-child {
+  margin: 23px 0px 0px 0px;
+}
+.fpCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 34px;
+  width: 285px;
+  height: 315px;
+  border-radius: 51px;
+}
+.fpCard img {
+  padding: 50px 20px 0px 0px;
+}
+.fpCard span {
+  padding: 39px 0px 35px 0px;
+}
+.cardText {
+  margin: 25px 0px 0px 0px;
+}
+.fpCard:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.fpCard:active {
+  background: var(--textBlack);
+}
+
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
